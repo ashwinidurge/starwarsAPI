@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54f40531-d1c0-405d-8fce-5654bd487cf6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/starwarsAPI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output_chatgtp.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output_main.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output_people.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output_planet.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.text" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_one.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_three.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_two.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/example.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/fetch_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/randgen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/timing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
