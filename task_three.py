@@ -59,3 +59,11 @@ if __name__ == "__main__":
     # second task : capture people
     second_result = second_task(first_task)
     pprint(second_result)
+
+
+
+
+
+
+
+

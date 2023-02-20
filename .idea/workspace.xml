@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54f40531-d1c0-405d-8fce-5654bd487cf6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/models/characters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/basemodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/datamodels/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/datamodels/films.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/datamodels/planets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/datamodels/spacies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/datamodels/starships.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/datamodels/vechiles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/films.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.text" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/characters.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/characters.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
