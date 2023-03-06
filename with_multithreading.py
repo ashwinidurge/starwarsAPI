@@ -8,6 +8,7 @@ We want to create multiple threads to achieve the same task
 
 """
 
+
 import requests
 import time
 
@@ -38,8 +39,9 @@ thread-10  https://swapi.dev/api/people/10
 
 
 def get_urls():
+
     urls = []
-    for i in range(1, 11):
+    for i in range(1, 5):
         magic_url = f"https://swapi.dev/api/people/{i}"
         urls.append(magic_url)
     return urls
@@ -55,22 +57,22 @@ def fetch_data(url):
 def main():
     """
 
-   Returns:
+    Returns:
 
-   NOTE:
-       ThreadPool object can be created with whatever number of threads
-       we would like.
-       For example, `pool = ThreadPool(100)`
+    NOTE:
+        ThreadPool object can be created with whatever number of threads
+        we would like.
+        For example, `pool = ThreadPool(100)`
 
-       `pool` object has `map` method which distributes the collection elements
-       across available threads in pool.
+        `pool` object has `map` method which distributes the collection elements
+        across available threads in pool.
 
-       `pool.map()` function returns a list object
+        `pool.map()` function returns a list object
 
-   """
-    pool_size = 10
-    pool = ThreadPool(10)
+    """
     urls = get_urls()
+
+    pool = ThreadPool(5)
     results = pool.map(fetch_data, urls)
 
     print(results)
@@ -78,3 +80,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

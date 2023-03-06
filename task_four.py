@@ -17,13 +17,15 @@ For example - "A new hope" movie has following resource endpoints -
 
 """
 
+from multiprocessing.pool import ThreadPool
+
 from resources.films import Film   # resource model
 from models.datamodels.films import Film_  # pydantic model
 from models.datamodels.characters import Character_
 
 from dal.db_conn_helper import get_db_conn
 from dal.dml import insert_resource
-from utils.fetch_data import hit_url
+from utils.fetch_data import hit_url, fetch_char_names
 from utils.timing import timeit
 
 
@@ -66,8 +68,6 @@ if __name__ == "__main__":
     data = Film().get_sample_data(id_=1)
     film_data = Film_(**data)
 
-    breakpoint()
-
     # create DB connection
     conn = get_db_conn()
 
@@ -93,9 +93,16 @@ if __name__ == "__main__":
         film_data.url,
     ]
 
+    # DB operation
     result = insert_resource(
         "film", "film_id", film_data.episode_id, film_columns, film_values
     )
+
+    characters = film_data.characters
+    pool = ThreadPool(5)
+    results = pool.map(fetch_char_names, characters)
+
+    breakpoint()
 
     # TODO
     # capture all characters
@@ -110,14 +117,6 @@ if __name__ == "__main__":
     # film_data.planets
     # only values will change
     # column list can be once created and re-used
-
-
-
-
-
-
-
-
 
 
 
