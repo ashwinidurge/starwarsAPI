@@ -6,6 +6,7 @@ import requests
 from typing import List, Dict, Union, Optional
 from requests import Response
 
+
 # logging configuration
 logging.basicConfig(
     filename="utils/example.log",
@@ -24,17 +25,40 @@ def mylogger(func):
             logging.error("there are issues in fetching details")
 
         return result_
-
     return wrapper
 
 
 @mylogger
 def hit_url(url: str) -> Optional[Response]:
+    """hits the API endpoint and returns response if successful"""
+
     response = requests.get(url)
+    print(f"[ INFO ] {response} - {url}")
     if response.status_code != 200:
         response.raise_for_status()
     else:
         return response
+
+
+@mylogger
+def fetch_char_names(url: str) -> str:
+    """
+
+    Args:
+        url (str): url of character
+
+    Returns:
+        name of a character from given url
+
+    """
+
+    response = requests.get(url)
+    print(f"[ INFO ] {response} - {url}")
+    if response.status_code != 200:
+        response.raise_for_status()
+    else:
+        data = response.json()
+        return data.get("name")
 
 
 def fetch_data(urls: List) -> Union[List, Dict]:
