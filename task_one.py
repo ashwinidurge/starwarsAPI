@@ -21,7 +21,7 @@ import requests
 
 from utils.timing import timeit
 from utils.randgen import ProduceChars
-from typing import List  # required for type hinting
+from typing import List  # thise is change of developer 2
 
 
 def generate_random_numbers_old(n: int = 15) -> list:
